@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posting Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main class="container">
+    <header>
+      <h1>Novo Post Pro</h1>
+      <p>Compartilhe com feedback visual instantâneo.</p>
+    </header>
+
+    <form id="form-post">
+      <div class="input-group">
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo" placeholder="Digite o título do post" required>
+      </div>
+      <div class="input-group">
+        <label for="conteudo">Conteúdo</label>
+        <textarea id="conteudo" rows="5" placeholder="O que você está pensando?" required></textarea>
+      </div>
+      <button type="submit" id="btn-postar">Postar Agora</button>
+    </form>
+
+    <hr>
+
+    <section class="feed">
+      <h2>Visualização do Post</h2>
+      <article class="post-card">
+        <h2 id="renderizador-titulo">O título aparecerá aqui...</h2>
+        <p id="renderizador-conteudo">O conteúdo do seu post surgirá após o envio.</p>
+      </article>
+    </section>
+  </main>
+
+  <div id="toast" class="toast">Post publicado com sucesso!</div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
